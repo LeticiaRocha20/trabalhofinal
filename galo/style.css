@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  /*ALTURA*/
+  height: 100vh;
+  /*TUDO ALINHADO AO CENTRO*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*COR DO FUNDO*/
+  background: #8d848453;
+}
+
+/* AS COISAS FICAM COLOCADAS UMAS POR CIMA DAS OUTRAS, COLUNA*/
+main {
+  display: flex;
+  flex-direction: column;
+  /*DISTANCIA DE 5PX ENTRE CADA LINHA*/
+  gap: 5px;
+}
+/*TITULO ALINHADO AO CENTRO*/
+h1 {
+  text-align: center;
+}
+
+/*CARACTERISTICAS DO TITULO*/
+hr {
+  font-weight: bold;
+  height: 3px;
+  background: black;
+  margin-bottom: 10px;
+}
+/*GRADE COM 3 COLUNAS*/
+.game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.game button {
+  /*TAMANHO DOS BOTÕES, QUADRADOS*/
+  width: 100px;
+  height: 100px;
+  /*GROSSURA DA MARGEM*/
+  margin: 5px;
+  /*AO PASSAR O RATO APARECE A MAOZINHA*/
+  cursor: pointer;
+  /*TAN«MANHO DO X E DA O*/
+  font-size: 50px;
+  /*COR DO QUADRADO*/
+  background: #8d84841d;
+}

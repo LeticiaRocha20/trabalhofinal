@@ -1,0 +1,38 @@
+body {
+  /*ocupa a largura toda do ecrã*/
+    width: 100vw;
+    /*ocupa a altura toda do ecrã*/
+    height: 100vh;
+  /*centralizar*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*como tinha o scrol*/
+    margin: 0;
+  /*cor de fundo*/
+    background-color: rgba(148, 148, 148, 0.737);
+  }
+  
+  #game-board {
+    background-color: hsl(0, 1%, 39%);
+    border: 1vmin hsl(0, 0%, 10%) solid;
+  /*ele pega no que for menor e utilizar 80%, ou seja se a largura da tela for menor do que a altura da tela ele utiliza 80% da largura*/
+    width: 80vmin;
+    height: 80vmin;
+  /*a cobra anda numa "grade"- pixeis*/
+    display: grid;
+    /*fica uma grade de 21 por 21 quadrados*/
+      /*o "auto" faz com que eles sejam responsivos e todos do mesmo tamanho*/
+    grid-template-rows: repeat(21, auto);
+    grid-template-columns: repeat(21, auto);
+  }
+  
+  /*objetos que vão aparecer no quadrado, a cobra e a fruta*/
+ /*classe cobra*/
+  .snake {
+    background-color: #356825;
+  }
+  
+  .food {
+    background-color: #872727;
+  }
